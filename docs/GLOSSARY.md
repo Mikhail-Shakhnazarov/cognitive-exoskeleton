@@ -16,7 +16,7 @@ The tendency of meaning to slide under iteration when transformation is cheap. I
 Writing where the primary operation is specification of transformations rather than production of final text. Working at meta-level: defining semantic cores, transformation rules, and verification criteria rather than directly producing documents.
 
 **Augmented Cognition**  
-Amplification of human cognitive capability through external structures and tools. Distinct from automation—preserves human judgment and authority while delegating routine transformations.
+Amplification of human cognitive capability through external structures and tools. Distinct from automation--preserves human judgment and authority while delegating routine transformations.
 
 ---
 
@@ -35,7 +35,7 @@ The role that stabilizes intent, writes specifications, records decisions, ident
 The role that implements from specifications, produces diffs and verification results, refuses to invent requirements. Returns friction when ambiguous.
 
 **Runtime**  
-Concrete environment where a model is invoked (web chat, CLI agent, IDE). Treated as replaceable—system must not depend on specific runtime.
+Concrete environment where a model is invoked (web chat, CLI agent, IDE). Treated as replaceable--system must not depend on specific runtime.
 
 ---
 
@@ -51,7 +51,7 @@ Typed blocked state. The system's refusal channel. Surfaces when work cannot pro
 Append-only journal of state transitions. Records: what changed, why, verification status, remaining friction, session pointer. Audit spine of the system.
 
 **Session Brief**  
-Compressed memory written at session end. Contains: intent → action → outcome, decisions made, diff summary, verification results, remaining friction, next pointers. Enables re-entry without transcript replay.
+Compressed memory written at session end. Contains: intent -> action -> outcome, decisions made, diff summary, verification results, remaining friction, next pointers. Enables re-entry without transcript replay.
 
 **Pattern**  
 Reusable constraint or pitfall captured after repeat failures. Promotes learning into structure. Accumulates across projects.
@@ -73,7 +73,7 @@ Minimal file set loaded on every boot. Required to restore correct behavior. Mus
 Curated working set loaded for specific operation. Bundle of files/artifacts that defines context scope. Types: BOOT_PACK (always), TASK_PACK (per task), SESSION_PACK (end-of-session writeout).
 
 **Kernel**  
-Smallest invariant rule set. Defines port contracts, artifact shapes, refusal modes. Must stay short—if kernel bloats, system becomes unbootable.
+Smallest invariant rule set. Defines port contracts, artifact shapes, refusal modes. Must stay short--if kernel bloats, system becomes unbootable.
 
 ---
 
@@ -83,7 +83,7 @@ Smallest invariant rule set. Defines port contracts, artifact shapes, refusal mo
 All decision loops close with human operator. Decisions become binding when operator terminates ambiguity into commitment. Architectural principle, not preference.
 
 **Commit**  
-Writing durable state to artifacts: spec, decision, friction closure, changelog entry, session brief. Without commits, work does not accumulate—it merely continues.
+Writing durable state to artifacts: spec, decision, friction closure, changelog entry, session brief. Without commits, work does not accumulate--it merely continues.
 
 **Verification**  
 Explicit checks that define "done." Can be: tests pass, commands run successfully, manual review checklist, domain-specific validation. Reality anchor that prevents "seems done" from becoming DONE.
@@ -99,13 +99,13 @@ Auditable completion state. Requirements satisfied or deferred, verification run
 ## Learning and Evolution
 
 **Learning Flywheel**  
-Systematic capability development across projects. Pattern: Project N → capture understanding → distill learnings → Operator more capable → Project N+1 faster/better.
+Systematic capability development across projects. Pattern: Project N -> capture understanding -> distill learnings -> Operator more capable -> Project N+1 faster/better.
 
 **Learning Artifacts**  
 Structured knowledge capture. Includes: patterns (failure modes), deep-dives (technical understanding), architecture decisions (design templates), domain knowledge (business context).
 
 **Pattern Maturity**  
-Progression of pattern confidence. Appears once = noted. Appears 3× = confirmed standard practice. Appears 6+× = consider automation/tooling.
+Progression of pattern confidence. Appears once = noted. Appears 3x = confirmed standard practice. Appears 6+x = consider automation/tooling.
 
 ---
 
@@ -128,7 +128,7 @@ One context does both interpretation and execution. Separation becomes ceremonia
 ## Philosophical Foundations
 
 **Tool vs Solver**  
-Fundamental distinction in system design. Solver: problem → black box → answer (operator atrophies). Tool: operator solves with amplification (judgment preserved and exercised).
+Fundamental distinction in system design. Solver: problem -> black box -> answer (operator atrophies). Tool: operator solves with amplification (judgment preserved and exercised).
 
 **Operator Agency**  
 Human authority and responsibility remains central. System amplifies but does not replace. Every decision point exercises judgment rather than delegating it.

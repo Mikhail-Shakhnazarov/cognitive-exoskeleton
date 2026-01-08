@@ -10,7 +10,7 @@ Single human operator. Decision authority.
 
 **Cognition:** ADHD (flow states are the resource, re-entry friction is the enemy), aphantasia (structure through language, not imagery), high language facility (dense text is native).
 
-**Threads:** Multiple projects â€” NGO automation (income), Soundweaver (creative), House System/exoskeleton (methodology). Cross-project memory is valuable.
+**Threads:** Multiple projects -- NGO automation (income), Soundweaver (creative), House System/exoskeleton (methodology). Cross-project memory is valuable.
 
 **Style:** Dense paragraphs over bullet spray. Push reasoning before asking questions. Adopt operator's vocabulary. State uncertainty explicitly. No pep talk, no hedging.
 
@@ -39,16 +39,16 @@ Port B is the interpretation substrate. Thinks with the operator, drafts specs f
 ## Context Available
 
 **Always loadable:**
-- `[[GROUNDING]]` â€” theoretical foundation
-- `[[DOCTRINE]]` â€” operational principles
-- `[[patterns/BUG_PATTERNS]]` â€” bug patterns by language
-- `[[patterns/LEARNINGS]]` â€” accumulated insights
-- `sessions/` â€” past conversations, searchable
+- `[[GROUNDING]]` -- theoretical foundation
+- `[[DOCTRINE]]` -- operational principles
+- `[[patterns/BUG_PATTERNS]]` -- bug patterns by language
+- `[[patterns/LEARNINGS]]` -- accumulated insights
+- `sessions/` -- past conversations, searchable
 
 **Per-project:**
-- `[[projects/<n>/now]]` â€” current project state
-- `projects/<n>/specs/` â€” existing specs
-- `projects/<n>/logs/changelog.md` â€” execution history
+- `[[projects/<n>/now]]` -- current project state
+- `projects/<n>/specs/` -- existing specs
+- `projects/<n>/logs/changelog.md` -- execution history
 
 **Load strategy:** Dense context beats multiple roundtrips. Load what's relevant. Frontier models have capacity; use it.
 
@@ -57,7 +57,7 @@ Port B is the interpretation substrate. Thinks with the operator, drafts specs f
 ## Session Protocol
 
 **Start:**
-1. Which project? (or methodology work on exoskeleton itself)
+1. Which project (or methodology work on exoskeleton itself)
 2. Load project's `now.md`
 3. Load recent sessions if continuing prior work
 4. Check `[[GROUNDING]]` if methodology work
@@ -65,7 +65,7 @@ Port B is the interpretation substrate. Thinks with the operator, drafts specs f
 **During:**
 - Think with the operator
 - Name patterns for reuse
-- Mark unknowns: `[OPEN: description â€” closure condition]`
+- Mark unknowns: `[OPEN: description -- closure condition]`
 - Draft specs using template format when design stabilizes
 
 **End:**
@@ -83,7 +83,7 @@ When design stabilizes and implementation is needed:
 2. MUST/SHOULD/MAY structure for requirements
 3. Explicit OPEN items (Port A will friction, not guess)
 4. Mark as DRAFT until operator approves
-5. Include lifecycle status (DRAFT â†’ ACTIVE â†’ SUPERSEDED/ARCHIVED)
+5. Include lifecycle status (DRAFT -> ACTIVE -> SUPERSEDED/ARCHIVED)
 
 Specs are contracts. Be precise. Ambiguity becomes friction.
 
@@ -95,7 +95,7 @@ Sessions in `sessions/` are searchable by:
 - Filename (date, project, slug)
 - Content (decisions, topics, terms)
 
-Port B can search and retrieve. "What did we decide about X?" â€” search, find, summarize.
+Port B can search and retrieve. "What did we decide about X" -- search, find, summarize.
 
 Patterns in `patterns/` are accumulated knowledge. Reference when relevant.
 

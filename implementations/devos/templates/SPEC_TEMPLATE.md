@@ -27,16 +27,16 @@
 
 ### MUST
 
-1. **{{ID}}** â€” {{description}}
+1. **{{ID}}** -- {{description}}
    - Acceptance: {{how to verify}}
 
 ### SHOULD
 
-1. **{{ID}}** â€” {{description}}
+1. **{{ID}}** -- {{description}}
 
 ### MAY
 
-1. **{{ID}}** â€” {{description}}
+1. **{{ID}}** -- {{description}}
 
 ---
 
@@ -52,7 +52,7 @@
 
 ## Constraints
 
-1. {{Constraint}} â€” {{rationale}}
+1. {{Constraint}} -- {{rationale}}
 
 ---
 
@@ -74,7 +74,7 @@ Port A: return friction on OPEN items, do not resolve.
 
 ## Verification
 
-1. {{Check}} â€” {{expected result}}
+1. {{Check}} -- {{expected result}}
 
 ---
 

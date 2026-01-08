@@ -5,7 +5,7 @@ Session id: S-YYYYMMDD-HHMM_<project>_<slug>
 Task: <task id / name>
 Runtimes used: <Port B runtime> + <Port A runtime> (or explicit port switching)
 
-Summary (terse; 5–10 lines): intent → action → outcome.
+Summary (terse; 5-10 lines): intent -> action -> outcome.
 
 Diff summary (files touched + one-line notes):
 - <path>: <change note>

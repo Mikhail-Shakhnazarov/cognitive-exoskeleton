@@ -75,6 +75,6 @@ Example:
 > (https://github.com/Mikhail-Shakhnazarov/cognitive-exoskeleton).
 > Modifications include [describe changes].
 
-## Questions?
+## Questions
 
 If you're unsure how to cite or attribute, open an issue and ask.

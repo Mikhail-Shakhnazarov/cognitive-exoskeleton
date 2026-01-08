@@ -45,7 +45,7 @@ Beyond base Work-OS artifacts, devOS adds:
 **Bug Patterns** (`patterns/BUG_PATTERNS.md`):
 - Cross-project failure memory
 - Language-specific common errors
-- Pattern count → automation threshold
+- Pattern count -> automation threshold
 - Checked before coding, updated after bugs
 
 **Architecture Decisions** (`learnings/architecture_decisions/ADR-NNN-*.md`):
@@ -63,20 +63,20 @@ Beyond base Work-OS artifacts, devOS adds:
 ```
 Project N:
   Execute with discipline
-    ↓
+    v
   Deliver + capture domain understanding
-    ↓
+    v
   Distill learnings (patterns, deep-dives, decisions)
-    ↓
+    v
   Operator more capable
-    ↓
+    v
 Project N+1:
   Faster understanding (reference prior learnings)
-    ↓
+    v
   Better questions (domain knowledge compounds)
-    ↓
+    v
   Higher quality (patterns prevent pitfalls)
-    ↓
+    v
   More valuable (educate, not just execute)
 ```
 

@@ -39,9 +39,9 @@ Typed blocked states requiring operator decision.
 **Context:** Login rate limiting
 
 **Issue:** AUTH-003 specifies "per IP" but doesn't address:
-- Should we also limit per-email (prevent dictionary attack on single account)?
-- Should we limit per IP+email combination?
-- What about legitimate users behind shared IP (office, VPN)?
+- Should we also limit per-email (prevent dictionary attack on single account)
+- Should we limit per IP+email combination
+- What about legitimate users behind shared IP (office, VPN)
 
 **Options:**
 1. Per-IP only (current spec)
@@ -90,10 +90,10 @@ Typed blocked states requiring operator decision.
 **Spec:** SPEC-001#constraints  
 **Context:** What constitutes acceptable password
 
-**Issue:** Spec says "≥8 characters" but should we enforce:
-- Character class requirements (uppercase, lowercase, number, symbol)?
-- Common password blacklist?
-- Similarity to username/email?
+**Issue:** Spec says ">=8 characters" but should we enforce:
+- Character class requirements (uppercase, lowercase, number, symbol)
+- Common password blacklist
+- Similarity to username/email
 
 **Resolution:** Minimal for v1 - only length requirement  
 **Rationale:** Additional validation deferred to SPEC-002 (password policy enhancement). Current scope: basic authentication only.  

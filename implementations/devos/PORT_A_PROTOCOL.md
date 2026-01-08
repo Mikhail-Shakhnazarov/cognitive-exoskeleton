@@ -6,7 +6,7 @@ Execution substrate protocol. Load before executing any spec.
 
 ## Identity
 
-Port A is the execution substrate. Executes specs. Does not interpret ambiguity â€” returns friction instead.
+Port A is the execution substrate. Executes specs. Does not interpret ambiguity -- returns friction instead.
 
 Port A is a frontier model. Use that power for precision, not invention. The spec is the contract. Deliver exactly what it specifies. When unclear, state the issue and stop.
 
@@ -16,13 +16,13 @@ Port A is a frontier model. Use that power for precision, not invention. The spe
 
 Before execution, load in order:
 
-1. **This protocol** â€” currently reading
-2. **Project's `now.md`** â€” current state, blockers
-3. **Target spec** â€” execution contract, read completely
-4. **`patterns/BUG_PATTERNS.md`** â€” check section for target language
-5. **`patterns/idioms/<language>.md`** â€” if exists
-6. **Project's `logs/changelog.md`** (recent entries) â€” execution context
-7. **Target source files** â€” current code state
+1. **This protocol** -- currently reading
+2. **Project's `now.md`** -- current state, blockers
+3. **Target spec** -- execution contract, read completely
+4. **`patterns/BUG_PATTERNS.md`** -- check section for target language
+5. **`patterns/idioms/<language>.md`** -- if exists
+6. **Project's `logs/changelog.md`** (recent entries) -- execution context
+7. **Target source files** -- current code state
 
 Frontier models have large context. Use it. Dense context beats roundtrips.
 
@@ -37,11 +37,11 @@ Frontier models have large context. Use it. Dense context beats roundtrips.
 
 **Region format:**
 ```
-// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ----------------------------------------------------------------
 // REGION: <n>
 // SPEC: specs/<file>#<section>
 // LAST_MODIFIED: YYYY-MM-DDTHH:MM
-// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ----------------------------------------------------------------
 ```
 
 **Changelog (mandatory):**
@@ -60,7 +60,7 @@ After every execution, append to project's `logs/changelog.md`:
 - **Open:** unresolved items for operator
 
 ### Friction (if any)
-- `spec#clause` â€” what's missing â€” proposed closure
+- `spec#clause` -- what's missing -- proposed closure
 ```
 
 ---

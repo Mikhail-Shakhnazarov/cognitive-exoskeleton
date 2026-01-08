@@ -11,7 +11,7 @@
 
 ## What This Is
 
-Large language models enable cheap transformation of symbolic content—rewriting, reorganizing, compressing, expanding text-like artifacts at scale. This creates a new problem: **semantic drift**. Under iteration, meanings slide, scope creeps, definitions change silently, and understanding becomes unstable across sessions and runtimes.
+Large language models enable cheap transformation of symbolic content--rewriting, reorganizing, compressing, expanding text-like artifacts at scale. This creates a new problem: **semantic drift**. Under iteration, meanings slide, scope creeps, definitions change silently, and understanding becomes unstable across sessions and runtimes.
 
 The cognitive exoskeleton framework provides coordination discipline that exploits transformation capability while preventing drift through:
 
@@ -105,4 +105,4 @@ For questions, collaborations, or discussion:
 
 ---
 
-*Part of the emerging field of augmented cognition tooling—instruments for LLM-mediated knowledge work that preserve operator agency while exploiting transformation capability.*
+*Part of the emerging field of augmented cognition tooling--instruments for LLM-mediated knowledge work that preserve operator agency while exploiting transformation capability.*

@@ -32,18 +32,18 @@ Operational principles for the exoskeleton. This is how the system works.
 
 ```
 Operator thinks with Port B
-    â†“
-Design stabilizes â†’ spec drafted
-    â†“
-Operator reviews spec â†’ approve or iterate
-    â†“
+    v
+Design stabilizes -> spec drafted
+    v
+Operator reviews spec -> approve or iterate
+    v
 Spec published to project
-    â†“
+    v
 Port A loads spec, executes
-    â†“
+    v
 Code + changelog (or friction)
-    â†“
-Operator reviews â†’ integrate or route friction
+    v
+Operator reviews -> integrate or route friction
 ```
 
 The spec is the interface. Port B produces it; operator approves it; Port A consumes it.
@@ -53,22 +53,22 @@ The spec is the interface. Port B produces it; operator approves it; Port A cons
 ## Files
 
 **Infrastructure (vault root):**
-- `now.md` â€” global entry, project switcher
-- `DOCTRINE.md` â€” this file
-- `PORT_B_SYSTEM.md` â€” Port B context
-- `PORT_A_PROTOCOL.md` â€” Port A rules
-- `research/` â€” concept wiki
-- `patterns/` â€” bugs, idioms, learnings
-- `sessions/` â€” saved conversations
-- `templates/` â€” artifact templates
-- `assets/` â€” images, sketches, diagrams
+- `now.md` -- global entry, project switcher
+- `DOCTRINE.md` -- this file
+- `PORT_B_SYSTEM.md` -- Port B context
+- `PORT_A_PROTOCOL.md` -- Port A rules
+- `research/` -- concept wiki
+- `patterns/` -- bugs, idioms, learnings
+- `sessions/` -- saved conversations
+- `templates/` -- artifact templates
+- `assets/` -- images, sketches, diagrams
 
 **Per project (`projects/<n>/`):**
-- `now.md` â€” project entry surface
-- `specs/` â€” Port B â†’ Port A contracts
-- `src/` â€” code (Port A writes)
-- `logs/changelog.md` â€” execution history
-- `assets/` â€” project-specific visual artifacts
+- `now.md` -- project entry surface
+- `specs/` -- Port B -> Port A contracts
+- `src/` -- code (Port A writes)
+- `logs/changelog.md` -- execution history
+- `assets/` -- project-specific visual artifacts
 
 ---
 
@@ -85,7 +85,7 @@ Re-entry cost should be near-zero. If it's not, `now.md` needs updating.
 If something isn't decided, mark it:
 
 ```
-[OPEN: description â€” what would close it]
+[OPEN: description -- what would close it]
 ```
 
 Port A will friction on OPEN items, not guess. Closure is operator action.
@@ -97,7 +97,7 @@ Port A will friction on OPEN items, not guess. Closure is operator action.
 When Port A can't proceed:
 
 ```
-[FRICTION] spec#clause â€” what's missing â€” proposed closure
+[FRICTION] spec#clause -- what's missing -- proposed closure
 ```
 
 Friction routes to operator. Operator either decides, or sends to Port B for elaboration. Friction is signal, not failure.

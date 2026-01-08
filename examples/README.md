@@ -25,7 +25,7 @@ Friction log showing typed blocked states. Demonstrates:
 - Different friction types (semantic, feasibility, scope)
 - Structured decision options with trade-offs
 - Resolution tracking with rationale
-- Status progression (OPEN → RESOLVED)
+- Status progression (OPEN -> RESOLVED)
 
 **Key features:**
 - Explicit options enumeration (no hidden choices)
@@ -82,10 +82,10 @@ Study these to understand:
 ### As Validation
 
 Check your own artifacts against these:
-- Are your specs similarly structured?
-- Do your friction items enumerate options?
-- Do your changelogs link to specs?
-- Is verification status explicit?
+- Are your specs similarly structured
+- Do your friction items enumerate options
+- Do your changelogs link to specs
+- Is verification status explicit
 
 ## Additional Examples
 
@@ -98,7 +98,7 @@ More examples will be added as the framework is used in real projects:
 
 ## Contributing Examples
 
-Have you used the framework and want to share sanitized examples? 
+Have you used the framework and want to share sanitized examples 
 
 See [CONTRIBUTING.md](../CONTRIBUTING.md) for how to submit. Good examples:
 - Show real problems and solutions

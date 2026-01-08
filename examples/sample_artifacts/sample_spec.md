@@ -35,29 +35,29 @@ Implement secure user authentication with email/password login, session manageme
 
 ### MUST
 
-1. **AUTH-001** — Hash passwords using bcrypt with cost factor 12
+1. **AUTH-001** -- Hash passwords using bcrypt with cost factor 12
    - Acceptance: No plaintext passwords in database; bcrypt.compare validates correctly
 
-2. **AUTH-002** — Generate cryptographically secure session tokens (32 bytes, hex-encoded)
+2. **AUTH-002** -- Generate cryptographically secure session tokens (32 bytes, hex-encoded)
    - Acceptance: Tokens generated with crypto.randomBytes; stored hashed in database
 
-3. **AUTH-003** — Rate limit login attempts to 5 per IP per 15 minutes
+3. **AUTH-003** -- Rate limit login attempts to 5 per IP per 15 minutes
    - Acceptance: 6th attempt within window returns 429; counter resets after window
 
-4. **AUTH-004** — Expire sessions after 24 hours by default
+4. **AUTH-004** -- Expire sessions after 24 hours by default
    - Acceptance: Token validation checks created_at + ttl; expired tokens rejected
 
-5. **AUTH-005** — Validate email format before registration
+5. **AUTH-005** -- Validate email format before registration
    - Acceptance: Regex validation; malformed emails rejected with 400
 
 ### SHOULD
 
-1. **AUTH-101** — Return meaningful error codes (400/401/429) not generic 500
-2. **AUTH-102** — Log authentication events (success, failure, rate limit) for audit
+1. **AUTH-101** -- Return meaningful error codes (400/401/429) not generic 500
+2. **AUTH-102** -- Log authentication events (success, failure, rate limit) for audit
 
 ### MAY
 
-1. **AUTH-201** — Support configurable session TTL per-user or per-request
+1. **AUTH-201** -- Support configurable session TTL per-user or per-request
 
 ---
 
@@ -72,7 +72,7 @@ Implement secure user authentication with email/password login, session manageme
 - GET `/auth/validate` - `Authorization: Bearer {token}`
 
 **Outputs:**
-- Success: `{ success: true, token?, message }`
+- Success: `{ success: true, token, message }`
 - Failure: `{ success: false, error, code }`
 
 **Dependencies:**
@@ -84,7 +84,7 @@ Implement secure user authentication with email/password login, session manageme
 
 ## Constraints
 
-1. Passwords must be ≥8 characters, ≤128 characters
+1. Passwords must be >=8 characters, <=128 characters
 2. Email addresses must be unique (database constraint)
 3. Session tokens must be 64 hex characters
 4. Rate limiting state must survive server restarts (persistent store)
@@ -96,8 +96,8 @@ Implement secure user authentication with email/password login, session manageme
 
 | ID | Description | Closure |
 |----|-------------|---------|
-| OPEN-001 | How should we handle email uniqueness race conditions? | Database unique constraint + retry logic or application-level locking |
-| OPEN-002 | Should failed login attempts be per-email or per-IP? | Clarify anti-abuse strategy |
+| OPEN-001 | How should we handle email uniqueness race conditions | Database unique constraint + retry logic or application-level locking |
+| OPEN-002 | Should failed login attempts be per-email or per-IP | Clarify anti-abuse strategy |
 
 Port A: return friction on OPEN items, do not resolve.
 
@@ -122,12 +122,12 @@ Check `patterns/BUG_PATTERNS.md`:
 
 ## Verification
 
-1. **Registration flow**: Create user with valid email/password → success response → user exists in DB with hashed password
-2. **Login flow**: Attempt login with correct credentials → token returned → token validates on subsequent request
-3. **Failed login**: Attempt login with wrong password → 401 returned → login counter increments
-4. **Rate limiting**: Make 6 login attempts within 15min → 6th returns 429 → error message indicates rate limit
-5. **Session expiration**: Create session, fast-forward clock 25 hours → token validation fails with appropriate error
-6. **Password reset**: Request reset → email sent → use token to set new password → can login with new password
+1. **Registration flow**: Create user with valid email/password -> success response -> user exists in DB with hashed password
+2. **Login flow**: Attempt login with correct credentials -> token returned -> token validates on subsequent request
+3. **Failed login**: Attempt login with wrong password -> 401 returned -> login counter increments
+4. **Rate limiting**: Make 6 login attempts within 15min -> 6th returns 429 -> error message indicates rate limit
+5. **Session expiration**: Create session, fast-forward clock 25 hours -> token validation fails with appropriate error
+6. **Password reset**: Request reset -> email sent -> use token to set new password -> can login with new password
 
 ---
 

@@ -15,18 +15,18 @@ Thank you for your interest in contributing! This project welcomes contributions
 - Translate to other languages
 
 ### 3. Share Implementations
-- Built a writeOS or researchOS implementation?
-- Adapted devOS for your context?
+- Built a writeOS or researchOS implementation
+- Adapted devOS for your context
 - Share it! We can link to it or incorporate it.
 
 ### 4. Report Issues
-- Found a bug in templates or documentation?
-- See a gap in the framework?
+- Found a bug in templates or documentation
+- See a gap in the framework
 - Open an issue with details
 
 ### 5. Propose Enhancements
-- Have ideas for improvements?
-- See missing components?
+- Have ideas for improvements
+- See missing components
 - Open an issue to discuss before implementing
 
 ## Contribution Process
@@ -63,9 +63,9 @@ By contributing, you agree that your contributions will be licensed under the sa
 - Code/templates: MIT License
 - Documentation: CC BY 4.0
 
-## Questions?
+## Questions
 
-Not sure if something is a good contribution? Open an issue to discuss first. No question is too small.
+Not sure if something is a good contribution Open an issue to discuss first. No question is too small.
 
 ## Code of Conduct
 

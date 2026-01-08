@@ -15,10 +15,10 @@ Append-only journal of state transitions. Each entry documents what changed, why
 - **Added:** Unique email constraint check before insert
 
 ### Verification
-✅ Registration with valid email/password succeeds  
-✅ Password stored hashed (not plaintext) in database  
-✅ Malformed email rejected with 400  
-✅ Duplicate email rejected with 409
+[PASS] Registration with valid email/password succeeds  
+[PASS] Password stored hashed (not plaintext) in database  
+[PASS] Malformed email rejected with 400  
+[PASS] Duplicate email rejected with 409
 
 ### Friction
 - FR-001 remains open (uniqueness race condition - using DB constraint for now)
@@ -36,10 +36,10 @@ Append-only journal of state transitions. Each entry documents what changed, why
 - **Changed:** Session tokens now stored hashed in database
 
 ### Verification
-✅ Login with correct credentials returns token  
-✅ Login with wrong password returns 401  
-✅ 6th login attempt within 15min returns 429  
-⏳ Session token validation (pending next session)
+[PASS] Login with correct credentials returns token  
+[PASS] Login with wrong password returns 401  
+[PASS] 6th login attempt within 15min returns 429  
+[PENDING] Session token validation (pending next session)
 
 ### Friction
 - FR-002 created (rate limiting scope - per-IP vs per-email)
@@ -94,9 +94,9 @@ Spec reviewed by operator, marked ACTIVE
 - **Added:** Development environment configuration
 
 ### Verification
-✅ Server starts successfully  
-✅ Database connection established  
-✅ Migrations run cleanly
+[PASS] Server starts successfully  
+[PASS] Database connection established  
+[PASS] Migrations run cleanly
 
 ### Friction
 None
@@ -110,7 +110,7 @@ Each entry must include:
 - Artifact type (code | config | doc | decision)
 - Spec reference (which requirement being satisfied)
 - Changes (Added/Changed/Fixed/Removed)
-- Verification status (✅ passed, ❌ failed, ⏳ pending, N/A)
+- Verification status ([PASS] passed, [FAIL] failed, [PENDING] pending, N/A)
 - Friction (new, resolved, remaining)
 
 Changes without verification are incomplete.

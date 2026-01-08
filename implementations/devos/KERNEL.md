@@ -11,7 +11,7 @@ Port B (meaning/spec) stabilizes intent, writes/updates specs, records decisions
 
 Port A (execution/diffs) implements strictly from the spec, produces diffs (exact file changes), runs verification, and appends changelog entries. Port A does not invent requirements; ambiguity returns friction. Reference: [Port A protocol](PORT_A_PROTOCOL.md).
 
-Runtimes are replaceable. â€œModel-agnosticâ€ means: the kernel does not depend on a specific vendor surface. Optional tool shims may exist, but they are non-authoritative bootloaders that only point to canonical artifacts.
+Runtimes are replaceable. "Model-agnostic" means: the kernel does not depend on a specific vendor surface. Optional tool shims may exist, but they are non-authoritative bootloaders that only point to canonical artifacts.
 
 Constrained runtimes exist. In some environments only the OS core is mounted (no projects). In such runs, only kernel/packs/templates/patterns are edited; project userland enters only as an explicitly scoped snapshot pack.
 
@@ -19,7 +19,7 @@ Constrained runtimes exist. In some environments only the OS core is mounted (no
 ABI = the required shape of artifacts so components compose across tools. The OS runs on artifacts, not on transcript replay.
 
 - [now.md](now.md) is the process table and boot surface. It yields the next correct action quickly on cold start and points to canonical state.
-- Specs are structured requests (â€œsyscallâ€ analogy): a standardized request from Port B to Port A so execution proceeds without inventing meaning. Template: [packs/SPEC_TEMPLATE.md](SPEC_TEMPLATE.md).
+- Specs are structured requests ("syscall" analogy): a standardized request from Port B to Port A so execution proceeds without inventing meaning. Template: [packs/SPEC_TEMPLATE.md](SPEC_TEMPLATE.md).
 - Friction is typed blocked state (error-return equivalent, but human-decidable). Log: [friction/FRICTION_LOG.md](FRICTION_LOG.md).
 - Changelog is append-only journal of state transitions. Log: [logs/changelog.md](changelog.md).
 - Session briefs are compressed memory written at session end for re-entry. Folder: [sessions/](sessions/).

@@ -21,7 +21,7 @@ Port A execution log. Append-only.
 
 ## [2025-12-30T00:00] BOOTSTRAP
 - **Added:** Full exoskeleton infrastructure
-- **Added:** Research library (9 concepts Ã— 3 tiers)
+- **Added:** Research library (9 concepts x 3 tiers)
 - **Added:** PORT_B_SYSTEM.md, PORT_A_PROTOCOL.md, DOCTRINE.md
 - **Added:** Templates (now.md, spec.md, session.md, changelog.md)
 - **Added:** Patterns (BUG_PATTERNS.md, LEARNINGS.md, idioms/*)
@@ -53,7 +53,7 @@ Cross-project insights. Higher-level than bug patterns. Distilled from sessions.
 
 ## Architecture
 
-**Port separation localizes failure.** Spec wrong? Port B. Execution wrong? Port A. Mixed interpretation/execution hides the source. (2025-01)
+**Port separation localizes failure.** Spec wrong Port B. Execution wrong Port A. Mixed interpretation/execution hides the source. (2025-01)
 
 **Operator termination is architecture.** Not ethics, not preference. Creates accountability, quality control, reversibility. (2025-01)
 
@@ -67,7 +67,7 @@ Cross-project insights. Higher-level than bug patterns. Distilled from sessions.
 
 ## Anti-Patterns
 
-_(what didn't work and why â€” add as discovered)_
+_(what didn't work and why -- add as discovered)_
 
 ## BUG_PATTERNS.md
 

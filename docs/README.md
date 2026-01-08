@@ -37,7 +37,7 @@ If you want to build with this:
 
 ## Core Concepts
 
-### What Problem Does This Solve?
+### What Problem Does This Solve
 
 LLMs enable cheap transformation of text and symbolic content. This creates **semantic drift**: under iteration, meanings slide, scope creeps, definitions change silently, and understanding becomes unstable across sessions.
 
@@ -47,7 +47,7 @@ The cognitive exoskeleton provides coordination discipline that:
 - Preserves operator agency
 - Makes work auditable and re-enterable
 
-### How Does It Work?
+### How Does It Work
 
 **Port separation**: Interpretation (Port B) and execution (Port A) are isolated roles with explicit contracts.
 
@@ -59,7 +59,7 @@ The cognitive exoskeleton provides coordination discipline that:
 
 **Learning capture**: Systematic capability development across projects.
 
-### Who Is This For?
+### Who Is This For
 
 **Practitioners**: People doing complex knowledge work with LLMs who need:
 - Work to survive context switches and time gaps
